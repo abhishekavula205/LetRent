@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectProfile" customModule="OnBoarding" customModuleProvider="target">
+            <connections>
+                <outlet property="continueButton" destination="60i-O2-h0C" id="Msn-Nb-j4y"/>
+                <outlet property="selectProfileTableView" destination="E3P-o6-E1b" id="9pN-73-oCz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ynv-cr-OfJ">
+                    <rect key="frame" x="114" y="111" width="186" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your default profile." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJn-Kc-tGl">
+                    <rect key="frame" x="107" y="155" width="200" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E3P-o6-E1b">
+                    <rect key="frame" x="20" y="226" width="374" height="320"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="320" id="Brn-DA-jg3"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="4uy-7x-c7l"/>
+                        <outlet property="delegate" destination="-1" id="2Ol-me-cKi"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60i-O2-h0C">
+                    <rect key="frame" x="20" y="610" width="374" height="60"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="8Cv-7R-Bnk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="Continue">
+                        <color key="titleColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="continueTapped" destination="-1" eventType="touchUpInside" id="ZOx-Ei-inq"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can always switch your profile later" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUp-rD-rn6">
+                    <rect key="frame" x="65" y="564" width="284" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.021485751494765282" green="0.030680101364850998" blue="0.027386093512177467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="E3P-o6-E1b" secondAttribute="trailing" constant="20" id="0jN-rW-M6B"/>
+                <constraint firstItem="Ynv-cr-OfJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="67" id="5TF-gt-h1P"/>
+                <constraint firstItem="60i-O2-h0C" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="A4z-Mc-ZIi"/>
+                <constraint firstItem="mUp-rD-rn6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Jti-Ds-djm"/>
+                <constraint firstItem="E3P-o6-E1b" firstAttribute="top" secondItem="UJn-Kc-tGl" secondAttribute="bottom" constant="50" id="Mra-eo-oK4"/>
+                <constraint firstItem="UJn-Kc-tGl" firstAttribute="top" secondItem="Ynv-cr-OfJ" secondAttribute="bottom" constant="8" symbolic="YES" id="PfV-1H-ybs"/>
+                <constraint firstItem="mUp-rD-rn6" firstAttribute="top" secondItem="E3P-o6-E1b" secondAttribute="bottom" constant="18" id="cCS-Eq-JCY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="60i-O2-h0C" secondAttribute="trailing" constant="20" id="iKY-iP-EE0"/>
+                <constraint firstItem="60i-O2-h0C" firstAttribute="top" secondItem="mUp-rD-rn6" secondAttribute="bottom" constant="26" id="kUx-rz-55k"/>
+                <constraint firstItem="E3P-o6-E1b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="odA-gO-gMS"/>
+                <constraint firstItem="Ynv-cr-OfJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vTz-QZ-4VJ"/>
+                <constraint firstItem="UJn-Kc-tGl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wtV-n8-XKB"/>
+            </constraints>
+            <point key="canvasLocation" x="46" y="104"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

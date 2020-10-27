@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrackDues" customModule="OnBoarding" customModuleProvider="target">
+            <connections>
+                <outlet property="getStartedButton" destination="k1n-yq-3oz" id="QyZ-Bb-oeM"/>
+                <outlet property="view" destination="pDs-Jy-xvp" id="Pch-LQ-ml9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="pDs-Jy-xvp">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Illustration - track" translatesAutoresizingMaskIntoConstraints="NO" id="9qn-dW-we1">
+                    <rect key="frame" x="57" y="224" width="300" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="h4e-Td-qfP"/>
+                        <constraint firstAttribute="width" constant="300" id="ulv-pb-DvV"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Dues" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKk-eZ-FlD">
+                    <rect key="frame" x="114" y="547" width="186" height="43"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                    <color key="textColor" red="0.021485751494765282" green="0.030680101364850998" blue="0.027386093512177467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send And Receive Apyments With a" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vor-eg-EBe">
+                    <rect key="frame" x="77.5" y="616" width="259" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.021485751494765282" green="0.030680101364850998" blue="0.027386093512177467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipses" translatesAutoresizingMaskIntoConstraints="NO" id="1ZR-7v-f6c">
+                    <rect key="frame" x="87" y="696" width="240" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="tPX-By-wME"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1n-yq-3oz">
+                    <rect key="frame" x="152.5" y="758" width="109" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="Get Started">
+                        <color key="titleColor" systemColor="systemOrangeColor"/>
+                    </state>
+                    <connections>
+                        <action selector="getStartedTapped" destination="-1" eventType="touchUpInside" id="Hdj-wL-Cpt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ZZt-JD-yP1"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1ZR-7v-f6c" firstAttribute="centerX" secondItem="pDs-Jy-xvp" secondAttribute="centerX" id="04b-cN-YFt"/>
+                <constraint firstItem="9qn-dW-we1" firstAttribute="centerX" secondItem="pDs-Jy-xvp" secondAttribute="centerX" id="Ace-vX-eci"/>
+                <constraint firstItem="1ZR-7v-f6c" firstAttribute="leading" secondItem="ZZt-JD-yP1" secondAttribute="leading" constant="87" id="Bb0-hf-Dfc"/>
+                <constraint firstItem="vor-eg-EBe" firstAttribute="centerX" secondItem="pDs-Jy-xvp" secondAttribute="centerX" id="Gw8-cL-b1U"/>
+                <constraint firstItem="9qn-dW-we1" firstAttribute="top" secondItem="ZZt-JD-yP1" secondAttribute="top" constant="180" id="HCO-1z-hRE"/>
+                <constraint firstItem="DKk-eZ-FlD" firstAttribute="top" secondItem="9qn-dW-we1" secondAttribute="bottom" constant="23" id="IrP-20-tVk"/>
+                <constraint firstItem="DKk-eZ-FlD" firstAttribute="centerX" secondItem="pDs-Jy-xvp" secondAttribute="centerX" id="LTZ-OH-k35"/>
+                <constraint firstItem="1ZR-7v-f6c" firstAttribute="top" secondItem="vor-eg-EBe" secondAttribute="bottom" constant="60" id="OzT-0s-o5J"/>
+                <constraint firstItem="k1n-yq-3oz" firstAttribute="centerX" secondItem="pDs-Jy-xvp" secondAttribute="centerX" id="YOY-EA-oOk"/>
+                <constraint firstItem="k1n-yq-3oz" firstAttribute="top" secondItem="1ZR-7v-f6c" secondAttribute="bottom" constant="46" id="mvf-u0-8wK"/>
+                <constraint firstItem="vor-eg-EBe" firstAttribute="top" secondItem="DKk-eZ-FlD" secondAttribute="bottom" constant="26" id="zJJ-aa-hWm"/>
+            </constraints>
+            <point key="canvasLocation" x="-235" y="-546"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Ellipses" width="77" height="16"/>
+        <image name="Illustration - track" width="105.33333587646484" height="80"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

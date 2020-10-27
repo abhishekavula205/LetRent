@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddPhone" customModule="OnBoarding" customModuleProvider="target">
+            <connections>
+                <outlet property="addLaterButton" destination="Acp-wg-JbJ" id="Cx5-mw-HqP"/>
+                <outlet property="addNumberButton" destination="ubN-Ot-oep" id="f6g-KQ-5CV"/>
+                <outlet property="addPhoneTextField" destination="ghi-a7-3hJ" id="cpY-yh-bGC"/>
+                <outlet property="countryCodeTextField" destination="cC0-PW-4Cy" id="5zX-iF-tKz"/>
+                <outlet property="view" destination="Mn5-aW-pgY" id="k7Q-cj-h3v"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Mn5-aW-pgY">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RF6-3d-RBb">
+                    <rect key="frame" x="130.5" y="114" width="153" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Amit Bakshi," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxB-8N-VuH">
+                    <rect key="frame" x="126.5" y="170" width="161" height="19.5"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZgH-pp-PHC">
+                    <rect key="frame" x="60" y="197.5" width="304" height="57.5"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Please enter a mobile number so you can send or receive payments through Yaptner App">
+                            <attributes>
+                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" metaFont="system" size="16"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cC0-PW-4Cy">
+                    <rect key="frame" x="20" y="289" width="80" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="3JH-oT-wEi"/>
+                        <constraint firstAttribute="height" constant="60" id="CQe-37-xIx"/>
+                    </constraints>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Acp-wg-JbJ">
+                    <rect key="frame" x="152" y="479" width="110" height="31"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="I Will Add Later">
+                                <attributes>
+                                    <color key="NSColor" systemColor="systemOrangeColor"/>
+                                    <font key="NSFont" metaFont="system" size="16"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="addLaterTapped" destination="-1" eventType="touchUpInside" id="1Bz-Mh-5Bh"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Phone" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ghi-a7-3hJ">
+                    <rect key="frame" x="119" y="289" width="275" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="kw5-M9-2sE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubN-Ot-oep">
+                    <rect key="frame" x="20" y="409" width="374" height="60"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="MkF-l4-j8Y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <state key="normal" title="Add Phone Number">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="addNumberTapped" destination="-1" eventType="touchUpInside" id="3St-k3-ssi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fwb-2e-Pgo"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ghi-a7-3hJ" firstAttribute="leading" secondItem="cC0-PW-4Cy" secondAttribute="trailing" constant="19" id="1hF-z9-36u"/>
+                <constraint firstItem="Acp-wg-JbJ" firstAttribute="top" secondItem="ubN-Ot-oep" secondAttribute="bottom" constant="10" id="7BW-X1-W1E"/>
+                <constraint firstItem="TxB-8N-VuH" firstAttribute="centerX" secondItem="Mn5-aW-pgY" secondAttribute="centerX" id="8q9-4S-NB0"/>
+                <constraint firstItem="cC0-PW-4Cy" firstAttribute="top" secondItem="ZgH-pp-PHC" secondAttribute="bottom" constant="34" id="FJg-Ul-Wfy"/>
+                <constraint firstItem="ZgH-pp-PHC" firstAttribute="leading" secondItem="fwb-2e-Pgo" secondAttribute="leading" constant="60" id="HgH-34-DQs"/>
+                <constraint firstItem="fwb-2e-Pgo" firstAttribute="trailing" secondItem="ZgH-pp-PHC" secondAttribute="trailing" constant="50" id="KX8-c2-sSd"/>
+                <constraint firstItem="fwb-2e-Pgo" firstAttribute="trailing" secondItem="ubN-Ot-oep" secondAttribute="trailing" constant="20" id="OoF-AN-9Jl"/>
+                <constraint firstItem="ZgH-pp-PHC" firstAttribute="top" secondItem="TxB-8N-VuH" secondAttribute="bottom" constant="8" symbolic="YES" id="PxE-Ur-Xbs"/>
+                <constraint firstItem="fwb-2e-Pgo" firstAttribute="trailing" secondItem="ghi-a7-3hJ" secondAttribute="trailing" constant="20" id="Qr1-zL-AM5"/>
+                <constraint firstItem="ubN-Ot-oep" firstAttribute="leading" secondItem="fwb-2e-Pgo" secondAttribute="leading" constant="20" id="SgX-py-e2X"/>
+                <constraint firstItem="ubN-Ot-oep" firstAttribute="centerX" secondItem="Mn5-aW-pgY" secondAttribute="centerX" id="Z0O-rz-2Vc"/>
+                <constraint firstItem="Acp-wg-JbJ" firstAttribute="centerX" secondItem="Mn5-aW-pgY" secondAttribute="centerX" id="dSG-6y-doK"/>
+                <constraint firstItem="ubN-Ot-oep" firstAttribute="top" secondItem="cC0-PW-4Cy" secondAttribute="bottom" constant="60" id="deL-U2-lA6"/>
+                <constraint firstItem="RF6-3d-RBb" firstAttribute="top" secondItem="fwb-2e-Pgo" secondAttribute="top" constant="70" id="dtr-u5-5aK"/>
+                <constraint firstItem="cC0-PW-4Cy" firstAttribute="leading" secondItem="fwb-2e-Pgo" secondAttribute="leading" constant="20" id="fBW-X5-Ywf"/>
+                <constraint firstItem="TxB-8N-VuH" firstAttribute="top" secondItem="RF6-3d-RBb" secondAttribute="bottom" constant="20" id="gmb-eG-oH3"/>
+                <constraint firstItem="RF6-3d-RBb" firstAttribute="centerX" secondItem="Mn5-aW-pgY" secondAttribute="centerX" id="lfR-9Q-sWi"/>
+                <constraint firstItem="ghi-a7-3hJ" firstAttribute="top" secondItem="cC0-PW-4Cy" secondAttribute="top" id="ssB-GZ-0Xc"/>
+            </constraints>
+            <point key="canvasLocation" x="-186" y="94"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

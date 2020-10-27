@@ -1,0 +1,6 @@
+framework module Pods_OnBoardingTests {
+  umbrella header "Pods-OnBoardingTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

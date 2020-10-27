@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmailVerification" customModule="OnBoarding" customModuleProvider="target">
+            <connections>
+                <outlet property="emailverificationTextField" destination="6MC-rC-it4" id="Gzl-B0-mAG"/>
+                <outlet property="resendEmailButton" destination="k1O-dC-ftO" id="5Jg-sU-Qvy"/>
+                <outlet property="submitButton" destination="pqO-d1-d1p" id="Lg5-Xg-IjM"/>
+                <outlet property="verificationCodeTextField" destination="2DF-OP-Azn" id="BHw-lo-4Ec"/>
+                <outlet property="verifyLaterButton" destination="dLG-tV-3OQ" id="SSh-XT-zxr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPe-oA-JJX">
+                    <rect key="frame" x="124.5" y="114" width="165" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EB-O3-hD7">
+                    <rect key="frame" x="59" y="170" width="296.5" height="20"/>
+                    <attributedString key="attributedText">
+                        <fragment content="To verify,  click the link sent to your email">
+                            <attributes>
+                                <font key="NSFont" metaFont="system" size="16"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A95-8s-IRC">
+                    <rect key="frame" x="67.5" y="228" width="279" height="20"/>
+                    <attributedString key="attributedText">
+                        <fragment content="enter verification code from your email">
+                            <attributes>
+                                <font key="NSFont" metaFont="system" size="16"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFx-5B-2Je">
+                    <rect key="frame" x="71" y="458" width="272" height="20"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Did Not receive Any Verification Code">
+                            <attributes>
+                                <font key="NSFont" metaFont="system" size="16"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RvP-cc-0vZ">
+                    <rect key="frame" x="199.5" y="198" width="15" height="20"/>
+                    <attributedString key="attributedText">
+                        <fragment content="or">
+                            <attributes>
+                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" metaFont="system" size="16"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6MC-rC-it4">
+                    <rect key="frame" x="20" y="288" width="374" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="7Td-45-d9M"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="q1b-6v-Ovh"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Verification Code" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2DF-OP-Azn">
+                    <rect key="frame" x="20" y="368" width="374" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="rIw-lw-yDQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="r8n-ZT-sTu"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k1O-dC-ftO">
+                    <rect key="frame" x="158" y="488" width="98" height="31"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Resend Email">
+                                <attributes>
+                                    <color key="NSColor" systemColor="systemOrangeColor"/>
+                                    <font key="NSFont" metaFont="system" size="16"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="resendEmailTapped" destination="-1" eventType="touchUpInside" id="DGT-BT-g2H"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqO-d1-d1p">
+                    <rect key="frame" x="20" y="533" width="374" height="60"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="WB8-YN-2gq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="Submit">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="submitTapped" destination="-1" eventType="touchUpInside" id="GEi-4d-cTn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dLG-tV-3OQ">
+                    <rect key="frame" x="165" y="599" width="84" height="31"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Verify Later">
+                                <attributes>
+                                    <color key="NSColor" systemColor="systemOrangeColor"/>
+                                    <font key="NSFont" metaFont="system" size="16"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="verifyLaterTapped" destination="-1" eventType="touchUpInside" id="WpN-3a-o5D"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6MC-rC-it4" secondAttribute="trailing" constant="20" id="5hL-eg-A2U"/>
+                <constraint firstItem="dLG-tV-3OQ" firstAttribute="top" secondItem="pqO-d1-d1p" secondAttribute="bottom" constant="6" id="6sj-05-kv4"/>
+                <constraint firstItem="6MC-rC-it4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="8fV-fe-sCw"/>
+                <constraint firstItem="pqO-d1-d1p" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9ci-BN-HWq"/>
+                <constraint firstItem="6MC-rC-it4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CI0-Qj-roi"/>
+                <constraint firstItem="dLG-tV-3OQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Eus-LX-jq6"/>
+                <constraint firstItem="2DF-OP-Azn" firstAttribute="top" secondItem="6MC-rC-it4" secondAttribute="bottom" constant="20" id="G7R-H2-V9W"/>
+                <constraint firstItem="MPe-oA-JJX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="K0b-Af-ptz"/>
+                <constraint firstItem="2DF-OP-Azn" firstAttribute="leading" secondItem="6MC-rC-it4" secondAttribute="leading" id="MXq-W6-90h"/>
+                <constraint firstItem="k1O-dC-ftO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QLS-EE-uyS"/>
+                <constraint firstItem="MPe-oA-JJX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="Rf9-hC-MNP"/>
+                <constraint firstItem="RvP-cc-0vZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="U5A-LY-ySj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pqO-d1-d1p" secondAttribute="trailing" constant="20" id="Y0x-To-wh0"/>
+                <constraint firstItem="6MC-rC-it4" firstAttribute="top" secondItem="A95-8s-IRC" secondAttribute="bottom" constant="40" id="cWE-q1-F21"/>
+                <constraint firstItem="RvP-cc-0vZ" firstAttribute="top" secondItem="0EB-O3-hD7" secondAttribute="bottom" constant="8" symbolic="YES" id="ca5-8E-is4"/>
+                <constraint firstItem="k1O-dC-ftO" firstAttribute="top" secondItem="HFx-5B-2Je" secondAttribute="bottom" constant="10" id="fas-FZ-UcE"/>
+                <constraint firstItem="pqO-d1-d1p" firstAttribute="top" secondItem="k1O-dC-ftO" secondAttribute="bottom" constant="14" id="feu-og-EhP"/>
+                <constraint firstItem="pqO-d1-d1p" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hOT-wT-j9Q"/>
+                <constraint firstItem="HFx-5B-2Je" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hqY-DB-Gmp"/>
+                <constraint firstItem="0EB-O3-hD7" firstAttribute="top" secondItem="MPe-oA-JJX" secondAttribute="bottom" constant="20" id="kjS-Zo-Jkz"/>
+                <constraint firstItem="2DF-OP-Azn" firstAttribute="trailing" secondItem="6MC-rC-it4" secondAttribute="trailing" id="lbI-qG-nJg"/>
+                <constraint firstItem="HFx-5B-2Je" firstAttribute="top" secondItem="2DF-OP-Azn" secondAttribute="bottom" constant="30" id="m9h-mV-GEY"/>
+                <constraint firstItem="A95-8s-IRC" firstAttribute="centerX" secondItem="RvP-cc-0vZ" secondAttribute="centerX" id="oId-VC-UR9"/>
+                <constraint firstItem="0EB-O3-hD7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vq2-Mj-YHr"/>
+                <constraint firstItem="A95-8s-IRC" firstAttribute="top" secondItem="RvP-cc-0vZ" secondAttribute="bottom" constant="10" id="w2J-Pz-TAC"/>
+            </constraints>
+            <point key="canvasLocation" x="-186" y="94"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
