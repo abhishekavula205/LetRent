@@ -48,7 +48,7 @@
                     </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cC0-PW-4Cy">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="   code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cC0-PW-4Cy">
                     <rect key="frame" x="20" y="289" width="80" height="60"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="3JH-oT-wEi"/>
@@ -75,7 +75,7 @@
                         <action selector="addLaterTapped" destination="-1" eventType="touchUpInside" id="1Bz-Mh-5Bh"/>
                     </connections>
                 </button>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Phone" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ghi-a7-3hJ">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="   Enter Phone" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ghi-a7-3hJ">
                     <rect key="frame" x="119" y="289" width="275" height="60"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="kw5-M9-2sE"/>
@@ -89,7 +89,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="MkF-l4-j8Y"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                     <state key="normal" title="Add Phone Number">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>

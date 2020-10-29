@@ -17,67 +17,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Illustration - house" translatesAutoresizingMaskIntoConstraints="NO" id="yyz-Tw-gaO">
-                                <rect key="frame" x="57" y="268" width="300" height="300"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcK-MQ-IRP">
+                                <rect key="frame" x="10" y="148" width="394" height="600"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Illustration - house" translatesAutoresizingMaskIntoConstraints="NO" id="yyz-Tw-gaO">
+                                        <rect key="frame" x="47" y="0.0" width="300" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="n9p-Yq-RIo"/>
+                                            <constraint firstAttribute="height" constant="300" id="vW2-IO-brD"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Easy Setup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mp-pN-6JH">
+                                        <rect key="frame" x="103.5" y="323" width="187" height="43"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                        <color key="textColor" red="0.021485751494765282" green="0.030680101364850998" blue="0.027386093512177467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add rental details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGN-zI-WTZ">
+                                        <rect key="frame" x="133.5" y="388" width="127" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.021485751494765282" green="0.030680101364850998" blue="0.027386093512177467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in few simple steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3j-bb-lbS">
+                                        <rect key="frame" x="127.5" y="412" width="139" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.021485751494765282" green="0.030680101364850998" blue="0.027386093512177467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipses1" translatesAutoresizingMaskIntoConstraints="NO" id="9Cr-cS-nm4">
+                                        <rect key="frame" x="158.5" y="472" width="77" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="M7h-Mc-eTl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2R-wM-UM9">
+                                        <rect key="frame" x="176" y="534" width="42" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Skip">
+                                            <color key="titleColor" systemColor="systemOrangeColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="skipTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="DvS-4k-mxi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="n9p-Yq-RIo"/>
-                                    <constraint firstAttribute="height" constant="300" id="vW2-IO-brD"/>
+                                    <constraint firstItem="9Cr-cS-nm4" firstAttribute="top" secondItem="Q3j-bb-lbS" secondAttribute="bottom" constant="40" id="0e0-ux-7Bp"/>
+                                    <constraint firstItem="yyz-Tw-gaO" firstAttribute="top" secondItem="gcK-MQ-IRP" secondAttribute="top" id="9Ru-Kw-B15"/>
+                                    <constraint firstItem="9Cr-cS-nm4" firstAttribute="centerX" secondItem="gcK-MQ-IRP" secondAttribute="centerX" id="AyK-LY-eel"/>
+                                    <constraint firstItem="8mp-pN-6JH" firstAttribute="top" secondItem="yyz-Tw-gaO" secondAttribute="bottom" constant="23" id="K03-Pp-mOp"/>
+                                    <constraint firstItem="IGN-zI-WTZ" firstAttribute="top" secondItem="8mp-pN-6JH" secondAttribute="bottom" constant="22" id="Vqu-rE-1E4"/>
+                                    <constraint firstItem="Q3j-bb-lbS" firstAttribute="centerX" secondItem="gcK-MQ-IRP" secondAttribute="centerX" id="kYE-SY-6Jq"/>
+                                    <constraint firstItem="Q3j-bb-lbS" firstAttribute="top" secondItem="IGN-zI-WTZ" secondAttribute="bottom" constant="4" id="oSi-v6-d6W"/>
+                                    <constraint firstItem="D2R-wM-UM9" firstAttribute="top" secondItem="9Cr-cS-nm4" secondAttribute="bottom" constant="46" id="rGq-J0-OW3"/>
+                                    <constraint firstItem="IGN-zI-WTZ" firstAttribute="centerX" secondItem="gcK-MQ-IRP" secondAttribute="centerX" id="u4h-Cc-Xx8"/>
+                                    <constraint firstItem="yyz-Tw-gaO" firstAttribute="centerX" secondItem="gcK-MQ-IRP" secondAttribute="centerX" id="uVT-NI-lwv"/>
+                                    <constraint firstAttribute="bottom" secondItem="D2R-wM-UM9" secondAttribute="bottom" constant="30" id="w3J-is-DGP"/>
+                                    <constraint firstItem="8mp-pN-6JH" firstAttribute="centerX" secondItem="gcK-MQ-IRP" secondAttribute="centerX" id="wIF-GV-k5r"/>
+                                    <constraint firstItem="D2R-wM-UM9" firstAttribute="centerX" secondItem="gcK-MQ-IRP" secondAttribute="centerX" id="zWw-GZ-ab9"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Easy Setup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mp-pN-6JH">
-                                <rect key="frame" x="113.5" y="591" width="187" height="43"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                <color key="textColor" red="0.021485751494765282" green="0.030680101364850998" blue="0.027386093512177467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add rental details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGN-zI-WTZ">
-                                <rect key="frame" x="143.5" y="656" width="127" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" red="0.021485751494765282" green="0.030680101364850998" blue="0.027386093512177467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in few simple steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3j-bb-lbS">
-                                <rect key="frame" x="137.5" y="680" width="139" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" red="0.021485751494765282" green="0.030680101364850998" blue="0.027386093512177467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipses" translatesAutoresizingMaskIntoConstraints="NO" id="9Cr-cS-nm4">
-                                <rect key="frame" x="87" y="740" width="240" height="16"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="16" id="M7h-Mc-eTl"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2R-wM-UM9">
-                                <rect key="frame" x="186" y="802" width="42" height="36"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Skip">
-                                    <color key="titleColor" systemColor="systemOrangeColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="skipTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="DvS-4k-mxi"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="D2R-wM-UM9" firstAttribute="top" secondItem="9Cr-cS-nm4" secondAttribute="bottom" constant="46" id="4cd-Cl-zqg"/>
-                            <constraint firstItem="8mp-pN-6JH" firstAttribute="top" secondItem="yyz-Tw-gaO" secondAttribute="bottom" constant="23" id="Kpb-D4-EuJ"/>
-                            <constraint firstItem="9Cr-cS-nm4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O2h-u7-I6V"/>
-                            <constraint firstItem="Q3j-bb-lbS" firstAttribute="top" secondItem="IGN-zI-WTZ" secondAttribute="bottom" constant="4" id="OpP-6y-vP2"/>
-                            <constraint firstItem="8mp-pN-6JH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ukd-1C-oqx"/>
-                            <constraint firstItem="yyz-Tw-gaO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="Wxq-cV-byD"/>
-                            <constraint firstItem="IGN-zI-WTZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xfy-d4-RZS"/>
-                            <constraint firstItem="9Cr-cS-nm4" firstAttribute="top" secondItem="Q3j-bb-lbS" secondAttribute="bottom" constant="40" id="ZKX-mb-JP6"/>
-                            <constraint firstItem="9Cr-cS-nm4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="exf-ar-Cmn"/>
-                            <constraint firstItem="Q3j-bb-lbS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gM1-p9-jhk"/>
-                            <constraint firstItem="D2R-wM-UM9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kDS-IR-QFE"/>
-                            <constraint firstItem="yyz-Tw-gaO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wbY-50-LJk"/>
-                            <constraint firstItem="IGN-zI-WTZ" firstAttribute="top" secondItem="8mp-pN-6JH" secondAttribute="bottom" constant="22" id="yCy-RB-rnM"/>
+                            <constraint firstItem="gcK-MQ-IRP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4eo-Et-Ao4"/>
+                            <constraint firstItem="gcK-MQ-IRP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AaK-zY-oKA"/>
+                            <constraint firstItem="gcK-MQ-IRP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="sVP-7k-yLN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gcK-MQ-IRP" secondAttribute="trailing" constant="10" id="yjO-py-RYq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qsH-jJ-Zqg"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="skipButton" destination="D2R-wM-UM9" id="OjL-wg-PJa"/>
                     </connections>
@@ -106,8 +119,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Ellipses" width="77" height="16"/>
+        <image name="Ellipses1" width="76.5" height="15.5"/>
         <image name="Illustration - house" width="105.33333587646484" height="83.666664123535156"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -20,63 +20,80 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Illustraion - Phone" translatesAutoresizingMaskIntoConstraints="NO" id="kDR-gV-hpX">
-                    <rect key="frame" x="57" y="224" width="300" height="300"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xua-Vw-sAq">
+                    <rect key="frame" x="10" y="153" width="394" height="590"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Illustraion - Phone" translatesAutoresizingMaskIntoConstraints="NO" id="kDR-gV-hpX">
+                            <rect key="frame" x="47" y="0.0" width="300" height="300"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="6Yp-4P-F7B"/>
+                                <constraint firstAttribute="height" constant="300" id="wgP-1B-PyV"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Payments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCJ-48-6yR">
+                            <rect key="frame" x="61.5" y="323" width="271" height="43"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                            <color key="textColor" red="0.021485751494765282" green="0.030680101364850998" blue="0.027386093512177467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send And Receive Apyments With a" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HK6-cI-5ga">
+                            <rect key="frame" x="67.5" y="392" width="259" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.021485751494765282" green="0.030680101364850998" blue="0.027386093512177467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipses2" translatesAutoresizingMaskIntoConstraints="NO" id="sCJ-Tp-a4Z">
+                            <rect key="frame" x="77" y="472" width="240" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="X7H-Er-AWq"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jh-Yh-ODv">
+                            <rect key="frame" x="176" y="534" width="42" height="36"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="Skip">
+                                <color key="titleColor" systemColor="systemOrangeColor"/>
+                            </state>
+                            <connections>
+                                <action selector="skipTapped" destination="-1" eventType="touchUpInside" id="QqL-Yg-7PD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="300" id="6Yp-4P-F7B"/>
-                        <constraint firstAttribute="height" constant="300" id="wgP-1B-PyV"/>
+                        <constraint firstItem="pCJ-48-6yR" firstAttribute="top" secondItem="kDR-gV-hpX" secondAttribute="bottom" constant="23" id="1Qn-MH-P2s"/>
+                        <constraint firstItem="HK6-cI-5ga" firstAttribute="centerX" secondItem="xua-Vw-sAq" secondAttribute="centerX" id="2z9-H8-S1B"/>
+                        <constraint firstItem="kDR-gV-hpX" firstAttribute="centerX" secondItem="xua-Vw-sAq" secondAttribute="centerX" id="ElW-6i-fA0"/>
+                        <constraint firstItem="5jh-Yh-ODv" firstAttribute="top" secondItem="sCJ-Tp-a4Z" secondAttribute="bottom" constant="46" id="Fs8-RX-JEJ"/>
+                        <constraint firstItem="5jh-Yh-ODv" firstAttribute="centerX" secondItem="xua-Vw-sAq" secondAttribute="centerX" id="NiF-1K-48p"/>
+                        <constraint firstItem="sCJ-Tp-a4Z" firstAttribute="leading" secondItem="xua-Vw-sAq" secondAttribute="leading" constant="77" id="bTo-2c-ZU6"/>
+                        <constraint firstItem="pCJ-48-6yR" firstAttribute="centerX" secondItem="xua-Vw-sAq" secondAttribute="centerX" id="cpn-GG-sON"/>
+                        <constraint firstItem="sCJ-Tp-a4Z" firstAttribute="top" secondItem="HK6-cI-5ga" secondAttribute="bottom" constant="60" id="e4B-o1-iUE"/>
+                        <constraint firstItem="sCJ-Tp-a4Z" firstAttribute="centerX" secondItem="xua-Vw-sAq" secondAttribute="centerX" id="hJM-Ow-xDY"/>
+                        <constraint firstItem="HK6-cI-5ga" firstAttribute="top" secondItem="pCJ-48-6yR" secondAttribute="bottom" constant="26" id="iEo-fY-eiF"/>
+                        <constraint firstItem="kDR-gV-hpX" firstAttribute="top" secondItem="xua-Vw-sAq" secondAttribute="top" id="kVM-ok-YBu"/>
+                        <constraint firstAttribute="bottom" secondItem="5jh-Yh-ODv" secondAttribute="bottom" constant="20" id="snp-KF-oum"/>
                     </constraints>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Payments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCJ-48-6yR">
-                    <rect key="frame" x="71.5" y="547" width="271" height="43"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                    <color key="textColor" red="0.021485751494765282" green="0.030680101364850998" blue="0.027386093512177467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send And Receive Apyments With a" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HK6-cI-5ga">
-                    <rect key="frame" x="77.5" y="616" width="259" height="20"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <color key="textColor" red="0.021485751494765282" green="0.030680101364850998" blue="0.027386093512177467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipses" translatesAutoresizingMaskIntoConstraints="NO" id="sCJ-Tp-a4Z">
-                    <rect key="frame" x="87" y="696" width="240" height="16"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="16" id="X7H-Er-AWq"/>
-                    </constraints>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jh-Yh-ODv">
-                    <rect key="frame" x="186" y="758" width="42" height="36"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                    <state key="normal" title="Skip">
-                        <color key="titleColor" systemColor="systemOrangeColor"/>
-                    </state>
-                    <connections>
-                        <action selector="skipTapped" destination="-1" eventType="touchUpInside" id="QqL-Yg-7PD"/>
-                    </connections>
-                </button>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="zGG-zh-cz2"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="HK6-cI-5ga" firstAttribute="top" secondItem="pCJ-48-6yR" secondAttribute="bottom" constant="26" id="5HD-34-iGq"/>
-                <constraint firstItem="sCJ-Tp-a4Z" firstAttribute="top" secondItem="HK6-cI-5ga" secondAttribute="bottom" constant="60" id="88u-DE-rV4"/>
-                <constraint firstItem="sCJ-Tp-a4Z" firstAttribute="centerX" secondItem="KUU-jy-Tol" secondAttribute="centerX" id="Fno-oj-FmV"/>
-                <constraint firstItem="HK6-cI-5ga" firstAttribute="centerX" secondItem="KUU-jy-Tol" secondAttribute="centerX" id="Fv7-AB-Gve"/>
-                <constraint firstItem="kDR-gV-hpX" firstAttribute="centerX" secondItem="KUU-jy-Tol" secondAttribute="centerX" id="GTa-o7-iw4"/>
-                <constraint firstItem="kDR-gV-hpX" firstAttribute="top" secondItem="zGG-zh-cz2" secondAttribute="top" constant="180" id="T1a-Jf-tMp"/>
-                <constraint firstItem="5jh-Yh-ODv" firstAttribute="centerX" secondItem="KUU-jy-Tol" secondAttribute="centerX" id="diA-xo-lRg"/>
-                <constraint firstItem="5jh-Yh-ODv" firstAttribute="top" secondItem="sCJ-Tp-a4Z" secondAttribute="bottom" constant="46" id="sCO-GZ-H2O"/>
-                <constraint firstItem="pCJ-48-6yR" firstAttribute="centerX" secondItem="KUU-jy-Tol" secondAttribute="centerX" id="vMb-wd-lMk"/>
-                <constraint firstItem="sCJ-Tp-a4Z" firstAttribute="leading" secondItem="zGG-zh-cz2" secondAttribute="leading" constant="87" id="veu-Bz-gv7"/>
-                <constraint firstItem="pCJ-48-6yR" firstAttribute="top" secondItem="kDR-gV-hpX" secondAttribute="bottom" constant="23" id="xG3-KE-WO6"/>
+                <constraint firstItem="xua-Vw-sAq" firstAttribute="leading" secondItem="zGG-zh-cz2" secondAttribute="leading" constant="10" id="74Z-GJ-orV"/>
+                <constraint firstItem="xua-Vw-sAq" firstAttribute="centerX" secondItem="KUU-jy-Tol" secondAttribute="centerX" id="jyS-qP-fyo"/>
+                <constraint firstItem="xua-Vw-sAq" firstAttribute="centerY" secondItem="KUU-jy-Tol" secondAttribute="centerY" id="neb-0M-G2F"/>
+                <constraint firstItem="zGG-zh-cz2" firstAttribute="trailing" secondItem="xua-Vw-sAq" secondAttribute="trailing" constant="10" id="oZ5-Mr-aqD"/>
             </constraints>
+            <nil key="simulatedTopBarMetrics"/>
             <point key="canvasLocation" x="-235" y="-546"/>
         </view>
     </objects>
     <resources>
-        <image name="Ellipses" width="77" height="16"/>
+        <image name="Ellipses2" width="76" height="15"/>
         <image name="Illustraion - Phone" width="105.33333587646484" height="80.333335876464844"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
